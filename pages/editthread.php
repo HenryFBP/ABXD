@@ -238,6 +238,7 @@ if(!isset($_POST["iconid"]))
 
 $icons = "";
 $i = 1;
+$check = "";
 while(is_file("img/icons/icon".$i.".png"))
 {
 	$check = "";
@@ -248,8 +249,7 @@ while(is_file("img/icons/icon".$i.".png"))
 				</label>";
 	$i++;
 }
-$check[0] = "";
-$check[1] = "";
+$check = ['', ''];
 if($_POST['iconid'] == 0) $check[0] = "checked=\"checked\" ";
 if($_POST['iconid'] == 255)
 {
