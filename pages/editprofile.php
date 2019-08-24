@@ -547,10 +547,10 @@ if($_POST['action'] == __("Edit profile"))
 						{
 							@unlink($dataDir."avatars/$userid");
 							$sets[] = $field." = ''";
-							continue;
+							break;
 						}
 						if($_FILES[$field]['name'] == "" || $_FILES[$field]['error'] == UPLOAD_ERR_NO_FILE)
-							continue;
+							break;
 						$res = HandlePicture($field, 0, $item['errorname'], $user['powerlevel'] > 0 || $loguser['powerlevel'] > 0);
 						if($res === true)
 							$sets[] = $field." = '#INTERNAL#'";
@@ -566,10 +566,10 @@ if($_POST['action'] == __("Edit profile"))
 						{
 							@unlink($dataDir."minipic/$userid");
 							$sets[] = $field." = ''";
-							continue;
+							break;
 						}
 						if($_FILES[$field]['name'] == "" || $_FILES[$field]['error'] == UPLOAD_ERR_NO_FILE)
-							continue;
+							break;
 						$res = HandlePicture($field, 1, $item['errorname']);
 						if($res === true)
 							$sets[] = $field." = '#INTERNAL#'";
