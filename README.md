@@ -1,3 +1,5 @@
+##### **NOTICE:** ABXD is at this point quite old and mostly unmaintained — expect things to break or have security issues if you try to run it. We strongly recommend that you know PHP and at least basic MySQL before you attempt to set up ABXD.
+
 # AcmlmBoard XD
 
 The new and secure AcmlmBoard-like board.
