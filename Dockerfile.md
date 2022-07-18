@@ -8,7 +8,7 @@ Build dockerfile
 
 Run Docker image (steals stdin) and mount current directory to `/app/`
 
-    docker run -it -p "8000:80" --volume ${PWD}:/app/ --name abxd abxd 
+    docker run -it -p "8000:80" -p "3306:3306" --volume ${PWD}:/app/ --name abxd abxd 
 
 Show containers
 
