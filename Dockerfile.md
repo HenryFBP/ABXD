@@ -16,12 +16,14 @@ Show containers
 
 ## setup
 
-http://localhost:8000/install.php
+Visit http://localhost:8000/install.php
 
 - server address: `localhost`
 - username: `abxd`
 - password: `password`
 - database name: `abxd`
+
+Then visit http://localhost:8000/ and make an admin user (first user registered)
 
 # delete
 
