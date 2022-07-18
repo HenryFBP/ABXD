@@ -29,3 +29,7 @@ know of any security bugs, plaese contact [Dirbaio](https://github.com/Dirbaio) 
 Fork the repository and send a pull request. This project uses tab-based
 indentation and opening braces on separate lines, so keep that in mind while
 contributing patches.
+
+## Local development with Docker
+
+See [Dockerfile.md](./Dockerfile.md).
